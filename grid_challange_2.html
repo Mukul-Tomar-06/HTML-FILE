@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Challange 2</title>
+    <style>
+        .challange-2{
+            display: grid;
+            grid-template-columns:auto auto auto auto auto;
+            grid-gap: 20px;
+            grid-auto-rows: minmax(50px,auto);
+            grid-auto-columns: minmax(25px,auto);
+            
+        }
+        .items{
+            background-color:rgb(255, 255, 71);
+            border: 3px solid yellow;
+            
+        }
+        #items-1{
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+        #items-2{
+            grid-column-start: 2;
+            grid-column-end: 6;
+        }
+        #items-3{
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+        #items-4{
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 6;
+        }
+        #items-5{
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="challange-2">
+        <div class="items" id="items-1">Nav</div>
+        <div class="items" id="items-2">Header</div>
+        <div class="items" id="items-3">Article</div>
+        <div class="items" id="items-4">Footer</div>
+        <div class="items" id="items-5">Ads</div>
+    </div>
+   
+</body>
+</html>

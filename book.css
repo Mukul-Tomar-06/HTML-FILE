@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    background: url("Pictures/background2.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #441c47;
+    padding-bottom: 20px;
+}
+/* .card-img{
+    background: url("Pictures/img.jpg") center/cover no-repeat;
+} */
+.card-container{
+display: grid;
+grid-template-columns: 420px 420px;
+}
+.banner h2{
+    align-items: center;
+    margin-top: none;
+    font-size: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+    font-style: oblique;
+    cursor: pointer;
+}
+.banner h2:hover{
+    color: rgb(54, 130, 160);
+}
+.card-content{
+    background:transparent;
+    height: 330px;
+    border-radius: 4px;
+}
+.card-content h3{
+    align-items: center;
+    padding: 25px 10px;
+    margin-left: 130px;
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin:0 auto;
+}
+form select,form input{
+display: block;
+width: 100%;
+margin: 15px 12px;
+padding: 10px;
+font-size: 12px;
+font-style: italic;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+outline: none;
+border-radius: 5px;
+font-weight: bold;
+}
+form input[type=text],form input[type=number],form input::placeholder, select{
+color: rgba(148, 148, 148, 0.815);
+}
+form input[type=submit]{
+    color: white;
+    background:orangered;
+    padding: 12px 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+form input[type=submit]:hover{
+    background: black;
+}
+@media(max-width: 990px){
+    .card-container{
+        grid-template-columns: 100%;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
+
